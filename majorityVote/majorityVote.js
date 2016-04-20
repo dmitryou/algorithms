@@ -30,7 +30,7 @@ function majorityVote(nums) {
 }
 
 function test(nums) {
-	console.log('for', nums, 'result', majorityVote(nums));
+	console.log('for :', nums, 'result :', majorityVote(nums));
 }
 
 // equal number of occurrences for all for [1, 2, 3] result -1
