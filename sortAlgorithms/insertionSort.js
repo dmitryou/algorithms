@@ -14,6 +14,18 @@ function insertionSort(unsortedList) {
     unsortedList[j+1] = tmp;
   }
 }
-var ul = [5, 3, 1, 2, 4];
-insertionSort(ul);
-console.log(ul);
+// var ul = [5, 3, 1, 2, 4];
+// insertionSort(ul);
+// console.log(ul);
+
+
+function test(arr) {
+  console.log('for :', arr);
+  insertionSort(arr);
+  console.log('result :', arr);
+
+}
+
+test([5, 3, 1, 2, 4]); //result [1, 2, 3, 4, 5]
+test([5, 3, 1, 2, 4, 9, 0]); //result [0, 1, 2, 3, 4, 5, 9]
+test([1, 1, 1, 1, 0, 0, 0]); //result [0, 0, 0, 1, 1, 1, 1]
